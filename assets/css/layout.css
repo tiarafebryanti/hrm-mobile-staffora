@@ -18,7 +18,7 @@ body {
 /* =============== MOBILE APP WRAPPER =============== */
 .app {
   width: 100%;
-  max-width: 390px;
+  max-width: 412px;
   height: 100vh; /* kunci tinggi layar */
   background: #f0f4ff;
   overflow-y: auto; /* aktifkan scroll vertikal */
