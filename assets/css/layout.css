@@ -561,8 +561,8 @@ textarea.form-control {
   color: #1a1450;
 }
 .update-btn {
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
   background: linear-gradient(135deg, #5b4eff, #b44eff);
   border-radius: 11px;
   display: flex;
@@ -573,6 +573,8 @@ textarea.form-control {
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(91, 78, 255, 0.3);
   flex-shrink: 0;
+  margin-left: 18px;
+  
 }
 
 /* Profile */
