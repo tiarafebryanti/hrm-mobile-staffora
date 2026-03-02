@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Staffora — Task List</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <div class="back" onclick="history.back()">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div>
+          <div class="title">Task List</div>
+          <div class="sub">Februari 2025</div>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="tabs">
+          <div class="tab active">All</div>
+          <div class="tab">Request</div>
+          <div class="tab">In Progress</div>
+          <div class="tab">Completed</div>
+        </div>
+
+        <div class="task-card">
+          <div class="task-top">
+            <div class="task-name">Redesign Mobile App UI/UX Staffora v3</div>
+            <div class="badge badge-blue">
+              <i class="fa-solid fa-spinner fa-spin" style="font-size: 8px"></i>
+              Progress
+            </div>
+          </div>
+          <div class="task-meta">
+            <div class="badge badge-purple">
+              <i class="fa-solid fa-building" style="font-size: 8px"></i>
+              Product & Eng
+            </div>
+            <div class="badge" style="background: #fff8e0; color: #b88000">
+              <i class="fa-regular fa-calendar" style="font-size: 8px"></i> 28
+              Feb 2025
+            </div>
+          </div>
+          <div
+            style="height: 1px; background: #f0f4ff; margin-bottom: 10px"
+          ></div>
+          <div class="task-donut">
+            <div class="donut-wrap">
+              <svg class="donut-svg" width="52" height="52" viewBox="0 0 52 52">
+                <circle
+                  cx="26"
+                  cy="26"
+                  r="20"
+                  fill="none"
+                  stroke="#F0F4FF"
+                  stroke-width="6"
+                />
+                <circle
+                  cx="26"
+                  cy="26"
+                  r="20"
+                  fill="none"
+                  stroke="url(#g1)"
+                  stroke-width="6"
+                  stroke-dasharray="88 38"
+                  stroke-linecap="round"
+                />
+                <defs>
+                  <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#5B4EFF" />
+                    <stop offset="100%" stop-color="#B44EFF" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="donut-center">70%</div>
+            </div>
+            <div class="task-stats">
+              <div class="task-stat-row">
+                <span>Selesai</span><span>14 task</span>
+              </div>
+              <div class="task-stat-row">
+                <span>Sisa</span><span>6 task</span>
+              </div>
+              <div class="task-stat-row">
+                <span>Total</span><span>20 task</span>
+              </div>
+            </div>
+            <div class="update-btn"><i class="fa-solid fa-pen"></i></div>
+          </div>
+        </div>
+
+        <div class="task-card">
+          <div class="task-top">
+            <div class="task-name">
+              Backend API Integration — Module Payroll
+            </div>
+            <div class="badge badge-yellow">
+              <i class="fa-solid fa-hourglass-half" style="font-size: 8px"></i>
+              Request
+            </div>
+          </div>
+          <div class="task-meta">
+            <div class="badge badge-purple">
+              <i class="fa-solid fa-building" style="font-size: 8px"></i>
+              Engineering
+            </div>
+            <div class="badge" style="background: #fff8e0; color: #b88000">
+              <i class="fa-regular fa-calendar" style="font-size: 8px"></i> 15
+              Mar 2025
+            </div>
+          </div>
+          <div
+            style="height: 1px; background: #f0f4ff; margin-bottom: 10px"
+          ></div>
+          <div class="task-donut">
+            <div class="donut-wrap">
+              <svg class="donut-svg" width="52" height="52" viewBox="0 0 52 52">
+                <circle
+                  cx="26"
+                  cy="26"
+                  r="20"
+                  fill="none"
+                  stroke="#F0F4FF"
+                  stroke-width="6"
+                />
+                <circle
+                  cx="26"
+                  cy="26"
+                  r="20"
+                  fill="none"
+                  stroke="url(#g2)"
+                  stroke-width="6"
+                  stroke-dasharray="25 101"
+                  stroke-linecap="round"
+                />
+                <defs>
+                  <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#FFB820" />
+                    <stop offset="100%" stop-color="#FF8C00" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="donut-center">20%</div>
+            </div>
+            <div class="task-stats">
+              <div class="task-stat-row">
+                <span>Selesai</span><span>3 task</span>
+              </div>
+              <div class="task-stat-row">
+                <span>Sisa</span><span>12 task</span>
+              </div>
+              <div class="task-stat-row">
+                <span>Total</span><span>15 task</span>
+              </div>
+            </div>
+            <div class="update-btn"><i class="fa-solid fa-pen"></i></div>
+          </div>
+        </div>
+
+        <div class="task-card">
+          <div class="task-top">
+            <div class="task-name">Unit Testing — Modul Absensi & Leave</div>
+            <div class="badge badge-green">
+              <i class="fa-solid fa-circle-check" style="font-size: 8px"></i>
+              Done
+            </div>
+          </div>
+          <div class="task-meta">
+            <div class="badge badge-purple">
+              <i class="fa-solid fa-building" style="font-size: 8px"></i> QA
+              Team
+            </div>
+            <div class="badge" style="background: #e6fff7; color: #00a878">
+              <i class="fa-regular fa-calendar" style="font-size: 8px"></i> 10
+              Feb 2025
+            </div>
+          </div>
+          <div
+            style="height: 1px; background: #f0f4ff; margin-bottom: 10px"
+          ></div>
+          <div class="task-donut">
+            <div class="donut-wrap">
+              <svg class="donut-svg" width="52" height="52" viewBox="0 0 52 52">
+                <circle
+                  cx="26"
+                  cy="26"
+                  r="20"
+                  fill="none"
+                  stroke="#F0F4FF"
+                  stroke-width="6"
+                />
+                <circle
+                  cx="26"
+                  cy="26"
+                  r="20"
+                  fill="none"
+                  stroke="url(#g3)"
+                  stroke-width="6"
+                  stroke-dasharray="126 0"
+                  stroke-linecap="round"
+                />
+                <defs>
+                  <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#00D2A0" />
+                    <stop offset="100%" stop-color="#00B8FF" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="donut-center">100%</div>
+            </div>
+            <div class="task-stats">
+              <div class="task-stat-row">
+                <span>Selesai</span><span>8 task</span>
+              </div>
+              <div class="task-stat-row">
+                <span>Sisa</span><span>0 task</span>
+              </div>
+              <div class="task-stat-row">
+                <span>Total</span><span>8 task</span>
+              </div>
+            </div>
+            <div
+              class="update-btn"
+              style="
+                background: linear-gradient(135deg, #00d2a0, #00b8ff);
+                box-shadow: 0 4px 10px rgba(0, 210, 160, 0.3);
+              "
+            >
+              <i class="fa-solid fa-pen"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

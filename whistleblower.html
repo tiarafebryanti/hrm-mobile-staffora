@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Staffora — Whistle Blower</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <div class="back" onclick="history.back()">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div>
+          <div class="title">Whistle Blower</div>
+          <div class="sub">Laporan Rahasia & Anonim</div>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="wb-info">
+          <div class="wb-info-title">
+            <i class="fa-solid fa-shield-halved"></i> Apa itu Whistle Blower?
+          </div>
+          <p>
+            Whistleblower adalah mekanisme pelaporan anonim bagi karyawan untuk
+            melaporkan pelanggaran, kecurangan, atau tindak pidana yang terjadi
+            di lingkungan perusahaan secara rahasia dan terlindungi.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <i class="fa-solid fa-user-secret" style="color: #5b4eff"></i>
+            Identitas Pelapor
+          </div>
+          <div class="form-group">
+            <label class="form-label"
+              >Nama Pelapor <span class="req">*</span></label
+            >
+            <select class="form-control">
+              <option>Budi Santoso</option>
+              <option>Anonim</option>
+            </select>
+          </div>
+          <div class="row2">
+            <div class="form-group" style="margin-bottom: 0">
+              <label class="form-label"
+                >Email Pelapor <span class="req">*</span></label
+              >
+              <input class="form-control" placeholder="email@perusahaan.id" />
+            </div>
+            <div class="form-group" style="margin-bottom: 0">
+              <label class="form-label">No. Telepon</label>
+              <input class="form-control" placeholder="+62..." />
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <i
+              class="fa-solid fa-triangle-exclamation"
+              style="color: #ff5e79"
+            ></i>
+            Informasi Laporan
+          </div>
+          <div class="form-group">
+            <label class="form-label"
+              >Judul Laporan <span class="req">*</span></label
+            >
+            <input
+              class="form-control"
+              placeholder="Ringkasan singkat laporan..."
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label"
+              >Tindakan yang Dilaporkan <span class="req">*</span></label
+            >
+            <select class="form-control">
+              <option>Korupsi / Penipuan</option>
+              <option>Pelecehan / Bullying</option>
+              <option>Diskriminasi</option>
+              <option>Pelanggaran Keamanan</option>
+              <option>Lainnya</option>
+            </select>
+          </div>
+
+          <div class="row2">
+            <div class="form-group">
+              <label class="form-label"
+                >Nama Terlapor <span class="req">*</span></label
+              >
+              <input class="form-control" placeholder="Nama lengkap" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Jabatan Terlapor</label>
+              <input class="form-control" placeholder="Posisi/jabatan" />
+            </div>
+          </div>
+
+          <div class="row2">
+            <div class="form-group">
+              <label class="form-label"
+                >Waktu Kejadian <span class="req">*</span></label
+              >
+              <input type="date" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label class="form-label"
+                >Lokasi Kejadian <span class="req">*</span></label
+              >
+              <input class="form-control" placeholder="Tempat kejadian" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label"
+              >Kronologis Kejadian <span class="req">*</span></label
+            >
+            <textarea
+              class="form-control"
+              rows="4"
+              placeholder="Ceritakan kronologis lengkap kejadian secara detail..."
+            ></textarea>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 0">
+            <label class="form-label">File Pendukung</label>
+            <div class="upload-box">
+              <i class="fa-solid fa-paperclip"></i>
+              <p>Upload Bukti / Dokumen</p>
+              <span>Foto, Video, PDF — Maks 20MB</span>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-primary">
+          <i class="fa-solid fa-paper-plane"></i> Kirim Laporan
+        </button>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Staffora — Riwayat Absensi</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <div class="back" onclick="history.back()">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div>
+          <div class="title">Riwayat Absensi</div>
+          <div class="sub">Product & Engineering</div>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="card">
+          <div class="card-title">
+            <i class="fa-solid fa-filter" style="color: #5b4eff"></i> Filter
+            Periode
+          </div>
+          <div class="row2">
+            <div class="form-group" style="margin-bottom: 0">
+              <label class="form-label">Start Date</label>
+              <input type="date" class="form-control" value="2025-02-01" />
+            </div>
+            <div class="form-group" style="margin-bottom: 0">
+              <label class="form-label">End Date</label>
+              <input type="date" class="form-control" value="2025-02-28" />
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-row">
+          <div class="stat-mini">
+            <div class="stat-mini-ico" style="background: #eef0ff">
+              <i
+                class="fa-solid fa-briefcase"
+                style="color: #5b4eff; font-size: 11px"
+              ></i>
+            </div>
+            <div class="stat-mini-val">18</div>
+            <div class="stat-mini-lbl">Total Kerja</div>
+          </div>
+          <div class="stat-mini">
+            <div class="stat-mini-ico" style="background: #fff0f2">
+              <i
+                class="fa-solid fa-clock"
+                style="color: #ff5e79; font-size: 11px"
+              ></i>
+            </div>
+            <div class="stat-mini-val">2</div>
+            <div class="stat-mini-lbl">Terlambat</div>
+          </div>
+          <div class="stat-mini">
+            <div class="stat-mini-ico" style="background: #e8fff6">
+              <i
+                class="fa-solid fa-moon"
+                style="color: #00d2a0; font-size: 11px"
+              ></i>
+            </div>
+            <div class="stat-mini-val">8</div>
+            <div class="stat-mini-lbl">Lembur</div>
+          </div>
+          <div class="stat-mini">
+            <div class="stat-mini-ico" style="background: #fff8e0">
+              <i
+                class="fa-solid fa-umbrella-beach"
+                style="color: #ffb820; font-size: 11px"
+              ></i>
+            </div>
+            <div class="stat-mini-val">3</div>
+            <div class="stat-mini-lbl">Leaves</div>
+          </div>
+        </div>
+
+        <div class="slb">
+          <i
+            class="fa-solid fa-circle-dot"
+            style="color: #5b4eff; margin-right: 5px; font-size: 8px"
+          ></i
+          >Recent Activity
+        </div>
+
+        <!-- Items -->
+        <div class="hist-item">
+          <div class="hist-date">
+            <i class="fa-regular fa-calendar"></i> Senin, 24 Februari 2025
+          </div>
+          <div class="hist-row">
+            <div class="hist-col">
+              <div class="hist-label">
+                <i
+                  class="fa-solid fa-right-to-bracket"
+                  style="margin-right: 3px; color: #5b4eff"
+                ></i
+                >Check In
+              </div>
+              <div class="hist-time">08:04</div>
+              <div class="hist-note on-time">
+                <i
+                  class="fa-solid fa-circle-check"
+                  style="margin-right: 3px; font-size: 9px"
+                ></i
+                >Tepat Waktu
+              </div>
+            </div>
+            <div class="hist-div"></div>
+            <div class="hist-col">
+              <div class="hist-label">
+                <i
+                  class="fa-solid fa-right-from-bracket"
+                  style="margin-right: 3px; color: #00d2a0"
+                ></i
+                >Check Out
+              </div>
+              <div class="hist-time">17:30</div>
+              <div class="hist-note on-time">
+                <i
+                  class="fa-solid fa-circle-check"
+                  style="margin-right: 3px; font-size: 9px"
+                ></i
+                >Tepat Waktu
+              </div>
+            </div>
+            <div class="hist-div"></div>
+            <div class="hist-col" style="flex: 0.8">
+              <div class="hist-label">Durasi</div>
+              <div class="hist-time" style="font-size: 13px">9j 26m</div>
+              <div
+                class="badge badge-purple"
+                style="margin-top: 4px; font-size: 8.5px"
+              >
+                Lembur
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hist-item">
+          <div class="hist-date">
+            <i class="fa-regular fa-calendar"></i> Jumat, 21 Februari 2025
+          </div>
+          <div class="hist-row">
+            <div class="hist-col">
+              <div class="hist-label">
+                <i
+                  class="fa-solid fa-right-to-bracket"
+                  style="margin-right: 3px; color: #5b4eff"
+                ></i
+                >Check In
+              </div>
+              <div class="hist-time">09:23</div>
+              <div class="hist-note late">
+                <i
+                  class="fa-solid fa-triangle-exclamation"
+                  style="margin-right: 3px; font-size: 9px"
+                ></i
+                >Terlambat 1j 23m
+              </div>
+            </div>
+            <div class="hist-div"></div>
+            <div class="hist-col">
+              <div class="hist-label">
+                <i
+                  class="fa-solid fa-right-from-bracket"
+                  style="margin-right: 3px; color: #00d2a0"
+                ></i
+                >Check Out
+              </div>
+              <div class="hist-time">17:05</div>
+              <div class="hist-note on-time">
+                <i
+                  class="fa-solid fa-circle-check"
+                  style="margin-right: 3px; font-size: 9px"
+                ></i
+                >Tepat Waktu
+              </div>
+            </div>
+            <div class="hist-div"></div>
+            <div class="hist-col" style="flex: 0.8">
+              <div class="hist-label">Durasi</div>
+              <div class="hist-time" style="font-size: 13px">7j 42m</div>
+              <div
+                class="badge badge-red"
+                style="margin-top: 4px; font-size: 8.5px"
+              >
+                Terlambat
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hist-item">
+          <div class="hist-date">
+            <i class="fa-regular fa-calendar"></i> Kamis, 20 Februari 2025
+          </div>
+          <div class="hist-row">
+            <div class="hist-col">
+              <div class="hist-label">
+                <i
+                  class="fa-solid fa-right-to-bracket"
+                  style="margin-right: 3px; color: #5b4eff"
+                ></i
+                >Check In
+              </div>
+              <div class="hist-time">07:58</div>
+              <div class="hist-note on-time">
+                <i
+                  class="fa-solid fa-circle-check"
+                  style="margin-right: 3px; font-size: 9px"
+                ></i
+                >Tepat Waktu
+              </div>
+            </div>
+            <div class="hist-div"></div>
+            <div class="hist-col">
+              <div class="hist-label">
+                <i
+                  class="fa-solid fa-right-from-bracket"
+                  style="margin-right: 3px; color: #00d2a0"
+                ></i
+                >Check Out
+              </div>
+              <div class="hist-time">17:10</div>
+              <div class="hist-note on-time">
+                <i
+                  class="fa-solid fa-circle-check"
+                  style="margin-right: 3px; font-size: 9px"
+                ></i
+                >Tepat Waktu
+              </div>
+            </div>
+            <div class="hist-div"></div>
+            <div class="hist-col" style="flex: 0.8">
+              <div class="hist-label">Durasi</div>
+              <div class="hist-time" style="font-size: 13px">9j 12m</div>
+              <div
+                class="badge badge-green"
+                style="margin-top: 4px; font-size: 8.5px"
+              >
+                Normal
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hist-item">
+          <div class="hist-date">
+            <i class="fa-regular fa-calendar"></i> Rabu, 19 Februari 2025
+          </div>
+          <div class="hist-row">
+            <div class="hist-col">
+              <div class="hist-label">
+                <i
+                  class="fa-solid fa-right-to-bracket"
+                  style="margin-right: 3px; color: #5b4eff"
+                ></i
+                >Check In
+              </div>
+              <div class="hist-time">—</div>
+              <div
+                class="hist-note"
+                style="color: #ffb820; font-size: 9.5px; font-weight: 700"
+              >
+                <i
+                  class="fa-solid fa-umbrella-beach"
+                  style="margin-right: 3px; font-size: 9px"
+                ></i
+                >Cuti Tahunan
+              </div>
+            </div>
+            <div class="hist-div"></div>
+            <div class="hist-col">
+              <div class="hist-label">
+                <i
+                  class="fa-solid fa-right-from-bracket"
+                  style="margin-right: 3px; color: #00d2a0"
+                ></i
+                >Check Out
+              </div>
+              <div class="hist-time">—</div>
+            </div>
+            <div class="hist-div"></div>
+            <div class="hist-col" style="flex: 0.8">
+              <div class="hist-label">Status</div>
+              <div
+                class="badge badge-yellow"
+                style="margin-top: 6px; font-size: 8.5px"
+              >
+                Cuti
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

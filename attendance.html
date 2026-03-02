@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Staffora — Attendance</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <div class="back" onclick="history.back()">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div>
+          <div class="title">Attendance</div>
+          <div class="sub">Senin, 24 Februari 2025</div>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="duration-card">
+          <div class="dur-label">
+            <i class="fa-regular fa-clock" style="margin-right: 4px"></i>Durasi
+            Kerja
+          </div>
+          <div class="dur-time">
+            07<span>j</span> 32<span>m</span> 15<span>d</span>
+          </div>
+          <div class="dur-meta">
+            <div class="dur-meta-item">
+              <i class="fa-solid fa-location-dot"></i> Kantor Pusat, Jakarta
+            </div>
+            <div class="dur-meta-item">
+              <i class="fa-solid fa-right-to-bracket"></i> 08:04 WIB
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <i class="fa-solid fa-building" style="color: #5b4eff"></i> Lokasi
+            Kerja
+          </div>
+          <div class="form-group" style="margin-bottom: 0">
+            <select class="form-control">
+              <option>Kantor Pusat - Jakarta</option>
+              <option>Kantor Cabang - Surabaya</option>
+              <option>Work From Home</option>
+              <option>Work From Anywhere</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <i class="fa-solid fa-map-location-dot" style="color: #ff5e79"></i>
+            Lokasi Saat Ini
+          </div>
+          <div class="map-placeholder">
+            <div class="map-pin"><i class="fa-solid fa-location-dot"></i></div>
+          </div>
+          <div class="loc-info">
+            <i class="fa-solid fa-circle-dot"></i>
+            <div class="loc-info-text">
+              <p>Jl. Sudirman No.52, Jakarta Pusat</p>
+              <span>Akurasi: ±12 meter · GPS Aktif</span>
+            </div>
+          </div>
+          <button
+            class="btn btn-outline"
+            style="font-size: 12px; padding: 10px; border-radius: 12px"
+          >
+            <i class="fa-solid fa-rotate"></i> Perbarui Lokasi
+          </button>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <i class="fa-solid fa-camera" style="color: #b44eff"></i> Foto
+            Selfie
+          </div>
+          <div class="selfie-btn">
+            <i class="fa-solid fa-camera-rotate"></i>
+            <p>Ambil Foto Selfie</p>
+            <span>Pastikan wajah terlihat jelas</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <i class="fa-solid fa-pen-to-square" style="color: #ffb820"></i>
+            Catatan
+            <span style="color: #ff5e79; font-size: 10px; margin-left: 2px"
+              >*Wajib</span
+            >
+          </div>
+          <textarea
+            class="form-control"
+            rows="3"
+            placeholder="Tambahkan catatan kehadiran hari ini..."
+          ></textarea>
+        </div>
+
+        <div class="btn-row">
+          <button class="btn btn-success">
+            <i class="fa-solid fa-right-to-bracket"></i> Check In
+          </button>
+          <button class="btn btn-danger">
+            <i class="fa-solid fa-right-from-bracket"></i> Check Out
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

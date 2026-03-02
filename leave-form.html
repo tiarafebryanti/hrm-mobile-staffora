@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Staffora — Izin & Cuti (Pengajuan)</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <div class="back" onclick="history.back()">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div>
+          <div class="title">Izin & Cuti</div>
+          <div class="sub">Pengajuan</div>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="tabs">
+          <div class="tab active">Pengajuan Izin</div>
+          <div class="tab" onclick="location.href = 'leave-status.html'">
+            Status Perizinan
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <i class="fa-solid fa-file-pen" style="color: #5b4eff"></i> Form
+            Pengajuan
+          </div>
+
+          <div class="form-group">
+            <label class="form-label"
+              >Nama Karyawan <span class="req">*</span></label
+            >
+            <select class="form-control">
+              <option>Budi Santoso — Product & Eng</option>
+              <option>Rina Kartika</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label"
+              >Jenis Izin <span class="req">*</span></label
+            >
+            <select class="form-control">
+              <option>Cuti Tahunan</option>
+              <option>Cuti Sakit</option>
+              <option>Izin Keluar</option>
+              <option>Cuti Melahirkan</option>
+              <option>Cuti Duka</option>
+            </select>
+          </div>
+
+          <div class="row2">
+            <div class="form-group" style="margin-bottom: 0">
+              <label class="form-label"
+                >Start Date <span class="req">*</span></label
+              >
+              <input type="date" class="form-control" />
+            </div>
+            <div class="form-group" style="margin-bottom: 0">
+              <label class="form-label"
+                >End Date <span class="req">*</span></label
+              >
+              <input type="date" class="form-control" />
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-top: 12px">
+            <label class="form-label">Alasan <span class="req">*</span></label>
+            <textarea
+              class="form-control"
+              rows="3"
+              placeholder="Tuliskan alasan pengajuan izin..."
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Lampiran</label>
+            <div class="upload-box">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+              <p>Upload Dokumen Pendukung</p>
+              <span>PDF, JPG, PNG — Maks 5MB</span>
+            </div>
+          </div>
+
+          <button class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Ajukan Izin
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

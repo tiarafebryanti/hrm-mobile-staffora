@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Staffora — Reimburse</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <div class="back" onclick="history.back()">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div>
+          <div class="title">Reimburse</div>
+          <div class="sub">Klaim Penggantian Biaya</div>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="tabs">
+          <div class="tab active">Form Reimburse</div>
+          <div class="tab">Status Pengajuan</div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <i class="fa-solid fa-receipt" style="color: #00d2a0"></i> Data
+            Pengajuan
+          </div>
+
+          <div class="form-group">
+            <label class="form-label"
+              >Nama Karyawan <span class="req">*</span></label
+            >
+            <select class="form-control">
+              <option>Budi Santoso — Product & Eng</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Tanggal <span class="req">*</span></label>
+            <input type="date" class="form-control" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label"
+              >Jenis Reimburse <span class="req">*</span></label
+            >
+            <select class="form-control">
+              <option>Kesehatan</option>
+              <option>Transportasi</option>
+              <option>Akomodasi</option>
+              <option>Makan</option>
+              <option>Lainnya</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label"
+              >Reimburse Untuk <span class="req">*</span></label
+            >
+            <input class="form-control" placeholder="Tujuan reimburse..." />
+          </div>
+
+          <div class="row2">
+            <div class="form-group">
+              <label class="form-label"
+                >Atas Nama <span class="req">*</span></label
+              >
+              <input class="form-control" placeholder="Nama pasien/penerima" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Diagnosa</label>
+              <input class="form-control" placeholder="Jika kesehatan" />
+            </div>
+          </div>
+
+          <div class="row2">
+            <div class="form-group" style="margin-bottom: 0">
+              <label class="form-label"
+                >Total Tagihan <span class="req">*</span></label
+              >
+              <input class="form-control" placeholder="Rp 0" />
+            </div>
+            <div class="form-group" style="margin-bottom: 0">
+              <label class="form-label"
+                >Nominal Reimburse <span class="req">*</span></label
+              >
+              <input class="form-control" placeholder="Rp 0" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <i class="fa-solid fa-table-list" style="color: #b44eff"></i> Detail
+            Reimburse
+          </div>
+
+          <div style="overflow-x: auto">
+            <table class="detail-table" style="min-width: 500px">
+              <thead>
+                <tr>
+                  <th style="width: 28px">No</th>
+                  <th>Sub Type</th>
+                  <th>File</th>
+                  <th>Notes</th>
+                  <th>Biaya</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td
+                    style="color: #8c93b0; font-size: 11px; text-align: center"
+                  >
+                    1
+                  </td>
+                  <td>
+                    <select>
+                      <option>Obat</option>
+                      <option>Konsultasi</option>
+                    </select>
+                  </td>
+                  <td>
+                    <label
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 36px;
+                        height: 28px;
+                        background: linear-gradient(135deg, #5b4eff, #b44eff);
+                        border-radius: 8px;
+                        cursor: pointer;
+                      "
+                    >
+                      <i
+                        class="fa-solid fa-upload"
+                        style="color: white; font-size: 11px"
+                      ></i>
+                    </label>
+                  </td>
+                  <td><input placeholder="..." /></td>
+                  <td><input placeholder="Rp" /></td>
+                </tr>
+                <tr>
+                  <td
+                    style="color: #8c93b0; font-size: 11px; text-align: center"
+                  >
+                    2
+                  </td>
+                  <td>
+                    <select>
+                      <option>Lab</option>
+                      <option>Obat</option>
+                    </select>
+                  </td>
+                  <td>
+                    <label
+                      style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 36px;
+                        height: 28px;
+                        background: linear-gradient(135deg, #5b4eff, #b44eff);
+                        border-radius: 8px;
+                        cursor: pointer;
+                      "
+                    >
+                      <i
+                        class="fa-solid fa-upload"
+                        style="color: white; font-size: 11px"
+                      ></i>
+                    </label>
+                  </td>
+                  <td><input placeholder="..." /></td>
+                  <td><input placeholder="Rp" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="add-row-btn" style="margin-top: 8px">
+            <i class="fa-solid fa-circle-plus" style="font-size: 16px"></i>
+            Tambah Baris
+          </div>
+        </div>
+
+        <button class="btn btn-primary">
+          <i class="fa-solid fa-paper-plane"></i> Ajukan Reimburse
+        </button>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Staffora — Cash Advance</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <div class="back" onclick="history.back()">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div>
+          <div class="title">Cash Advanced</div>
+          <div class="sub">FPU · FPP · Settlement</div>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="tabs">
+          <div class="tab active">FPU</div>
+          <div class="tab">FPP</div>
+          <div class="tab">Settlement</div>
+        </div>
+
+        <div
+          style="
+            background: linear-gradient(
+              135deg,
+              rgba(91, 78, 255, 0.08),
+              rgba(0, 210, 160, 0.08)
+            );
+            border: 1.5px solid rgba(91, 78, 255, 0.12);
+            border-radius: 16px;
+            padding: 12px 14px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          "
+        >
+          <div
+            style="
+              width: 40px;
+              height: 40px;
+              background: linear-gradient(135deg, #5b4eff, #b44eff);
+              border-radius: 13px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-shrink: 0;
+            "
+          >
+            <i
+              class="fa-solid fa-file-invoice-dollar"
+              style="color: white; font-size: 16px"
+            ></i>
+          </div>
+          <div>
+            <div style="font-size: 13px; font-weight: 900; color: #1a1450">
+              Form Pengajuan Uang (FPU)
+            </div>
+            <div
+              style="
+                font-size: 10px;
+                color: #8c93b0;
+                font-weight: 600;
+                margin-top: 2px;
+              "
+            >
+              Ajukan kebutuhan dana proyek
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <i class="fa-solid fa-folder-open" style="color: #5b4eff"></i>
+            Detail FPU
+          </div>
+
+          <div class="form-group">
+            <label class="form-label"
+              >Pilih Project <span class="req">*</span></label
+            >
+            <select class="form-control">
+              <option>PRJ-2025-001 — Staffora Mobile App</option>
+              <option>PRJ-2025-002 — HR System Upgrade</option>
+              <option>PRJ-2025-003 — Data Analytics Platform</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label"
+              >Total Biaya yang Dibutuhkan <span class="req">*</span></label
+            >
+            <div style="position: relative">
+              <span
+                style="
+                  position: absolute;
+                  left: 13px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  font-size: 12px;
+                  font-weight: 800;
+                  color: #5b4eff;
+                "
+                >Rp</span
+              >
+              <input
+                class="form-control"
+                placeholder="0"
+                style="padding-left: 36px"
+              />
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 0">
+            <label class="form-label">Upload Dokumen Pendukung</label>
+            <div class="upload-box">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+              <p>RAB / Invoice / Dokumen Lainnya</p>
+              <span>PDF, Excel — Maks 10MB</span>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-primary">
+          <i class="fa-solid fa-paper-plane"></i> Ajukan FPU
+        </button>
+
+        <!-- Preview blocks (tetap ada seperti mock, tapi tanpa disabled logic rumit) -->
+        <div
+          class="card"
+          style="margin-top: 14px; border: 1.5px dashed #e8eeff"
+        >
+          <div class="card-title" style="color: #bcc2da">
+            <i class="fa-solid fa-eye-slash" style="color: #d0d6ee"></i> Preview
+            — Form FPP
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" style="color: #c0c6de"
+              >Pilih Project</label
+            >
+            <select class="form-control" disabled style="opacity: 0.45">
+              <option>— Pilih Project —</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" style="color: #c0c6de"
+              >Tipe Pembayaran</label
+            >
+            <div class="type-row">
+              <div class="type-card selected" style="opacity: 0.45">
+                <i class="fa-solid fa-user"></i>
+                <p>Personal</p>
+              </div>
+              <div class="type-card" style="opacity: 0.45">
+                <i class="fa-solid fa-building"></i>
+                <p>Company</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group" style="opacity: 0.45">
+            <label class="form-label" style="color: #c0c6de"
+              >No. Rekening</label
+            >
+            <input class="form-control" disabled placeholder="xxxx-xxxx-xxxx" />
+          </div>
+
+          <div
+            style="
+              text-align: center;
+              padding: 8px 0;
+              font-size: 11px;
+              font-weight: 700;
+              color: #a0aac8;
+            "
+          >
+            <i class="fa-solid fa-arrow-up" style="margin-right: 4px"></i>Tap
+            tab FPP untuk mengisi form ini
+          </div>
+        </div>
+
+        <div
+          class="card"
+          style="margin-top: 10px; border: 1.5px dashed #e8eeff"
+        >
+          <div class="card-title" style="color: #bcc2da">
+            <i class="fa-solid fa-eye-slash" style="color: #d0d6ee"></i> Preview
+            — Settlement
+          </div>
+
+          <div class="form-group" style="opacity: 0.45">
+            <label class="form-label" style="color: #c0c6de"
+              >No. FPU / FPP</label
+            >
+            <select class="form-control" disabled>
+              <option>— Pilih Nomor —</option>
+            </select>
+          </div>
+
+          <div class="row2" style="opacity: 0.45">
+            <div class="form-group" style="margin-bottom: 0">
+              <label class="form-label" style="color: #c0c6de"
+                >Biaya FPU/FPP</label
+              >
+              <input class="form-control" disabled placeholder="Rp 0" />
+            </div>
+            <div class="form-group" style="margin-bottom: 0">
+              <label class="form-label" style="color: #c0c6de"
+                >Total Biaya Aktual</label
+              >
+              <input class="form-control" disabled placeholder="Rp 0" />
+            </div>
+          </div>
+
+          <div
+            style="
+              text-align: center;
+              padding: 8px 0;
+              font-size: 11px;
+              font-weight: 700;
+              color: #a0aac8;
+              margin-top: 8px;
+            "
+          >
+            <i class="fa-solid fa-arrow-up" style="margin-right: 4px"></i>Tap
+            tab Settlement untuk mengisi
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

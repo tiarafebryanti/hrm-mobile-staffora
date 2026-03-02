@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staffora HR App v2 — Home</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="mobile">
+
+
+      <!-- Header -->
+      <div class="header">
+        <div class="h-top">
+          <div>
+            <div class="greeting-sub">☀️ Selamat Pagi,</div>
+            <div class="greeting-name">Budi Santoso 👋</div>
+            <div class="division-badge">
+              <i
+                class="fa-solid fa-building-columns"
+                style="font-size: 9px"
+              ></i>
+              Product & Engineering
+            </div>
+          </div>
+
+          <div class="h-actions">
+            <div class="h-btn">
+              <i class="fa-solid fa-bell"></i>
+              <div class="notif-dot"></div>
+            </div>
+            <div class="avatar">BS</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Float -->
+      <div class="stats-float">
+        <div class="stat-card">
+          <div class="stat-ico" style="background: #eef0ff">
+            <i
+              class="fa-solid fa-briefcase"
+              style="color: #5b4eff; font-size: 13px"
+            ></i>
+          </div>
+          <div class="stat-val">248</div>
+          <div class="stat-lbl">Total Hari</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-ico" style="background: #fff0f5">
+            <i
+              class="fa-solid fa-clock"
+              style="color: #ff5e79; font-size: 13px"
+            ></i>
+          </div>
+          <div class="stat-val">3</div>
+          <div class="stat-lbl">Terlambat</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-ico" style="background: #e8fff6">
+            <i
+              class="fa-solid fa-moon"
+              style="color: #00d2a0; font-size: 13px"
+            ></i>
+          </div>
+          <div class="stat-val">12</div>
+          <div class="stat-lbl">Lembur</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-ico" style="background: #fff7e0">
+            <i
+              class="fa-solid fa-umbrella-beach"
+              style="color: #ffb820; font-size: 13px"
+            ></i>
+          </div>
+          <div class="stat-val">5</div>
+          <div class="stat-lbl">Sisa Cuti</div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="content">
+        <!-- Attendance -->
+        <div class="sec-title" style="margin-top: 6px">
+          <h3>Kehadiran Hari Ini</h3>
+          <a href="attendance-history.html"
+            >Lihat Detail
+            <i class="fa-solid fa-chevron-right" style="font-size: 9px"></i
+          ></a>
+        </div>
+
+        <div class="attend-row">
+          <div class="attend-card attend-in">
+            <a href="attendance.html" style="text-decoration: none">
+              <div class="attend-icon-wrap">
+                <i class="fa-solid fa-right-to-bracket"></i>
+              </div>
+            </a>
+            <div class="attend-lbl">CHECK IN</div>
+            <div class="attend-time">08:04</div>
+            <div class="attend-status">
+              <div class="pulse-dot"></div>
+              Tepat Waktu
+            </div>
+          </div>
+
+          <div class="attend-card attend-out">
+            <a href="attendance.html" style="text-decoration: none">
+              <div class="attend-icon-wrap">
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </div>
+            </a>  
+            <div class="attend-lbl">CHECK OUT</div>
+            <div class="attend-time">--:--</div>
+            <div class="attend-status">
+              <i
+                class="fa-regular fa-circle"
+                style="font-size: 7px; opacity: 0.7"
+              ></i>
+              Belum Absen
+            </div>
+          </div>
+        </div>
+
+        <!-- Favorite Menu -->
+        <div class="sec-title">
+          <h3>Favorite Menu</h3>
+          <a href="#"
+            >Edit <i class="fa-solid fa-pen" style="font-size: 9px"></i
+          ></a>
+        </div>
+
+        <div class="fav-scroll">
+          <a href="attendance.html" style="text-decoration: none">
+            <div class="fav-item">
+              <div
+                class="fav-ico"
+                style="background: linear-gradient(135deg, #5b4eff, #b44eff)"
+              >
+                <i class="fa-solid fa-fingerprint"></i>
+              </div>
+              <div class="fav-lbl">Absensi</div>
+            </div>
+          </a>
+
+          <a href="leave-form.html" style="text-decoration: none">
+            <div class="fav-item">
+              <div
+                class="fav-ico"
+                style="background: linear-gradient(135deg, #ff5e79, #ff9a44)"
+              >
+                <i class="fa-solid fa-file-circle-check"></i>
+              </div>
+              <div class="fav-lbl">Izin & Cuti</div>
+            </div>
+          </a>
+
+          <a href="tasklist.html" style="text-decoration: none">
+            <div class="fav-item">
+              <div
+                class="fav-ico"
+                style="background: linear-gradient(135deg, #00d2a0, #00b8ff)"
+              >
+                <i class="fa-solid fa-list-check"></i>
+              </div>
+              <div class="fav-lbl">Task List</div>
+            </div>
+          </a>
+
+          <a href="cash-advance.html" style="text-decoration: none">
+            <div class="fav-item">
+              <div
+                class="fav-ico"
+                style="background: linear-gradient(135deg, #ffb820, #ff5e79)"
+              >
+                <i class="fa-solid fa-sack-dollar"></i>
+              </div>
+              <div class="fav-lbl">Cash Adv</div>
+            </div>
+          </a>
+
+          
+            <div class="fav-item">
+              <div
+                class="fav-ico"
+                style="background: linear-gradient(135deg, #7c3aed, #5b4eff)"
+              >
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+              </div>
+              <div class="fav-lbl">Slip Gaji</div>
+            </div>
+          
+        </div>
+
+        <!-- App Menu Grid -->
+        <div class="sec-title">
+          <h3>Menu Aplikasi</h3>
+          <a href="more-apps.html"
+            >More Apps
+            <i class="fa-solid fa-chevron-right" style="font-size: 9px"></i
+          ></a>
+        </div>
+
+        <div class="app-grid">
+          <a href="attendance.html" style="text-decoration: none">
+            <div class="app-item">
+              <div
+                class="app-ico"
+                style="background: linear-gradient(135deg, #5b4eff, #b44eff)"
+              >
+                <i class="fa-solid fa-fingerprint"></i>
+              </div>
+              <div class="app-lbl">Absensi</div>
+            </div>
+          </a>
+
+          <a href="leave-form.html" style="text-decoration: none">
+            <div class="app-item">
+              <div
+                class="app-ico"
+                style="background: linear-gradient(135deg, #ff5e79, #ff9a44)"
+              >
+                <i class="fa-solid fa-file-circle-check"></i>
+              </div>
+              <div class="app-lbl">Izin & Cuti</div>
+            </div>
+          </a>
+
+          <a href="tasklist.html" style="text-decoration: none">
+            <div class="app-item">
+              <div
+                class="app-ico"
+                style="background: linear-gradient(135deg, #00d2a0, #00b8ff)"
+              >
+                <i class="fa-solid fa-list-check"></i>
+              </div>
+              <div class="app-lbl">Task List</div>
+            </div>
+          </a>
+
+          <a href="cash-advance.html" style="text-decoration: none">
+            <div class="app-item">
+              <div
+                class="app-ico"
+                style="background: linear-gradient(135deg, #ffb820, #ff8c00)"
+              >
+                <i class="fa-solid fa-sack-dollar"></i>
+              </div>
+              <div class="app-lbl">Cash Adv</div>
+            </div>
+          </a>
+
+          <a href="attendance-history.html" style="text-decoration: none">
+          <div class="app-item">
+            <div
+              class="app-ico"
+              style="background: linear-gradient(135deg, #a78bfa, #7c3aed)"
+            >
+              <i class="fa-solid fa-clock-rotate-left"></i>
+            </div>
+            <div class="app-lbl">Riwayat</div>
+          </div>
+          </a>
+
+          <div class="app-item">
+            <div
+              class="app-ico"
+              style="background: linear-gradient(135deg, #34d399, #059669)"
+            >
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <div class="app-lbl">Health</div>
+          </div>
+
+          <div class="app-item">
+            <div
+              class="app-ico"
+              style="background: linear-gradient(135deg, #60a5fa, #2563eb)"
+            >
+              <i class="fa-solid fa-moon"></i>
+            </div>
+            <div class="app-lbl">Lembur</div>
+          </div>
+          
+          <a href="more-apps.html" style="text-decoration: none">
+          <div class="app-item">
+            <div
+              class="app-ico"
+              style="background: linear-gradient(135deg, #f472b6, #ec4899)"
+            >
+              <i class="fa-solid fa-grip"></i>
+            </div>
+            <div class="app-lbl">More Apps</div>
+          </div>
+        </div>
+        </a>
+
+        <!-- Company News -->
+        <div class="sec-title">
+          <h3>Company News</h3>
+          <a href="#"
+            >View More
+            <i class="fa-solid fa-chevron-right" style="font-size: 9px"></i
+          ></a>
+        </div>
+
+        <div class="news-card">
+          <div class="news-thumb news-thumb-1">
+            <div class="news-tag tag-ann">
+              <i class="fa-solid fa-bullhorn" style="margin-right: 4px"></i
+              >Announcement
+            </div>
+          </div>
+          <div class="news-body">
+            <div class="news-title">
+              Update Kebijakan WFH Q1 2025 — Fleksibel 3 Hari Seminggu
+            </div>
+            <div class="news-meta">
+              <i
+                class="fa-solid fa-building"
+                style="font-size: 9px; color: #a78bfa"
+              ></i>
+              <span>HR Department</span>
+              <div class="meta-sep"></div>
+              <i class="fa-regular fa-clock" style="font-size: 9px"></i>
+              <span>2 jam lalu</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <div class="news-thumb news-thumb-2">
+            <div class="news-tag tag-ev">
+              <i class="fa-solid fa-party-horn" style="margin-right: 4px"></i
+              >Event
+            </div>
+          </div>
+          <div class="news-body">
+            <div class="news-title">
+              Annual Company Gathering Maret 2025 di Bali 🌴
+            </div>
+            <div class="news-meta">
+              <i
+                class="fa-solid fa-user-tie"
+                style="font-size: 9px; color: #60a5fa"
+              ></i>
+              <span>Management</span>
+              <div class="meta-sep"></div>
+              <i class="fa-regular fa-clock" style="font-size: 9px"></i>
+              <span>1 hari lalu</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="height: 10px"></div>
+      </div>
+
+      <!-- Bottom Nav -->
+      <div class="bottom-nav">
+        <a class="nav-item active" href="home.html">
+          <div class="nav-icon-w"><i class="fa-solid fa-house"></i></div>
+          <div class="nav-text">Home</div>
+        </a>
+
+        <a class="nav-item" href="attendance.html">
+          <div class="nav-icon-w"><i class="fa-solid fa-fingerprint"></i></div>
+          <div class="nav-text">Attendance</div>
+        </a>
+
+        <div class="nav-center-btn"><i class="fa-solid fa-qrcode"></i></div>
+
+        <a class="nav-item" href="tasklist.html">
+          <div class="nav-icon-w"><i class="fa-solid fa-list"></i></div>
+          <div class="nav-text">Task List</div>
+        </a>
+
+        <a class="nav-item" href="profile.html">
+          <div class="nav-icon-w"><i class="fa-regular fa-user"></i></div>
+          <div class="nav-text">Profil</div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
