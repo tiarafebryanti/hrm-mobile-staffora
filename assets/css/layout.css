@@ -582,7 +582,7 @@ textarea.form-control {
 
 /* Profile */
 .profile-hero {
-  background: linear-gradient(135deg, #5b4eff, #b44eff, #ff4ecd);
+  background: linear-gradient(170deg, #1A325B , #EC8845, rgb(247, 175, 127));
   padding: 24px 18px 26px;
   display: flex;
   flex-direction: column;
