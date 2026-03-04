@@ -23,6 +23,8 @@ body {
   background: #f0f4ff;
   overflow-y: auto; /* aktifkan scroll vertikal */
   overflow-x: hidden;
+  scrollbar-width: none;
+  
 }
 
 /* =============== HEADER =============== */
@@ -292,6 +294,7 @@ textarea.form-control {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.65);
   font-weight: 700;
+  margin-left: 2px;
 }
 .dur-meta {
   display: flex;
@@ -399,7 +402,8 @@ textarea.form-control {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  margin-top: 4px;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 /* Attendance History */
@@ -574,7 +578,6 @@ textarea.form-control {
   box-shadow: 0 4px 10px rgba(91, 78, 255, 0.3);
   flex-shrink: 0;
   margin-left: 18px;
-  
 }
 
 /* Profile */
@@ -845,4 +848,256 @@ textarea.form-control {
 }
 .type-card.selected p {
   color: #5b4eff;
+}
+
+/* ─── BOTTOM NAV ─── */
+.bottom-nav {
+  background: rgb(255, 255, 255);
+  padding: 10px 8px 18px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #eceef8;
+  box-shadow: 0 -8px 24px rgba(91, 78, 255, 0.07);
+  border-radius: 18px 18px 0 0;
+}
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  padding: 4px 10px;
+  text-decoration: none;
+}
+.nav-icon-w {
+  font-size: 18px;
+  color: #bcc2da;
+  transition: color 0.2s;
+}
+.nav-text {
+  font-size: 9px;
+  font-weight: 700;
+  color: #bcc2da;
+}
+.nav-item.active .nav-icon-w,
+.nav-item.active .nav-text {
+  color: #4e66ff;
+}
+
+.nav-center-btn {
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, #5b4eff, #b44eff);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+  margin-top: -40px;
+  box-shadow: 0 8px 22px rgba(91, 78, 255, 0.45);
+  cursor: pointer;
+}
+
+/* =========================
+   THEME OVERRIDE — PALET BARU (ATTENDANCE / LAYOUT)
+   ========================= */
+
+:root {
+  --orange1: #d8462c;
+  --orange2: #ec8845;
+  --blue1: #1c4373;
+  --navy: #0f1e3c;
+
+  --bg: #f8faff;
+  --card: #ffffff;
+
+  --text: var(--navy);
+  --muted: rgba(15, 30, 60, 0.58);
+  --muted2: rgba(15, 30, 60, 0.4);
+  --border: rgba(15, 30, 60, 0.1);
+
+  --softBlue: rgba(28, 67, 115, 0.06);
+  --softOrange: rgba(236, 136, 69, 0.1);
+}
+
+/* base */
+body {
+  background: var(--bg);
+}
+.app {
+  background: var(--bg);
+}
+
+/* HEADER (fresh gradient) */
+.header {
+  background: linear-gradient(
+    135deg,
+    rgba(28, 67, 115, 1) 0%,
+    rgba(236, 136, 69, 1) 60%,
+    rgba(216, 70, 44, 1) 100%
+  ) !important;
+}
+
+/* CARD */
+.card {
+  box-shadow: 0 10px 26px rgba(15, 30, 60, 0.08);
+}
+.card-title {
+  color: var(--muted) !important;
+}
+
+/* Override inline warna icon di card title */
+.card-title i {
+  color: var(--blue1) !important;
+}
+
+/* Duration card (gradient lebih cerah) */
+.duration-card {
+  background: linear-gradient(
+    135deg,
+    rgba(28, 67, 115, 1) 0%,
+    rgba(236, 136, 69, 1) 55%,
+    rgba(216, 70, 44, 1) 100%
+  ) !important;
+  box-shadow: 0 12px 28px rgba(15, 30, 60, 0.18);
+}
+
+/* Form */
+.form-label {
+  color: var(--muted) !important;
+}
+.form-label .req {
+  color: var(--orange1) !important;
+}
+
+.form-control {
+  background: #ffffff;
+  border-color: rgba(15, 30, 60, 0.1);
+  color: var(--text);
+}
+.form-control::placeholder {
+  color: rgba(15, 30, 60, 0.35);
+}
+.form-control:focus {
+  border-color: rgba(28, 67, 115, 0.55);
+  box-shadow: 0 0 0 4px rgba(28, 67, 115, 0.1);
+}
+
+/* dropdown arrow: ganti stroke dari 5B4EFF ke BLUE1 */
+select.form-control {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%231C4373' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") !important;
+}
+
+/* Map placeholder + grid line */
+.map-placeholder {
+  background: linear-gradient(
+    135deg,
+    rgba(28, 67, 115, 0.08),
+    rgba(236, 136, 69, 0.12)
+  ) !important;
+}
+.map-placeholder::before {
+  background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%231C4373' fill-opacity='0.05'%3E%3Cpath d='M0 0h40v40H0z'/%3E%3Cpath d='M0 20h40M20 0v40' stroke='%231C4373' stroke-opacity='0.12' stroke-width='1' fill='none'/%3E%3C/g%3E%3C/svg%3E") !important;
+}
+.map-pin {
+  background: linear-gradient(
+    135deg,
+    var(--orange1),
+    var(--orange2)
+  ) !important;
+  box-shadow: 0 10px 22px rgba(216, 70, 44, 0.25);
+}
+
+/* location info */
+.loc-info {
+  background: linear-gradient(
+    135deg,
+    rgba(28, 67, 115, 0.06),
+    rgba(236, 136, 69, 0.08)
+  ) !important;
+  border: 1px solid rgba(15, 30, 60, 0.06);
+}
+.loc-info i {
+  color: var(--blue1) !important;
+}
+.loc-info-text p {
+  color: var(--text) !important;
+}
+.loc-info-text span {
+  color: var(--muted) !important;
+}
+
+/* Selfie */
+.selfie-btn {
+  border-color: rgba(28, 67, 115, 0.35) !important;
+  background: linear-gradient(
+    135deg,
+    rgba(28, 67, 115, 0.05),
+    rgba(236, 136, 69, 0.06)
+  ) !important;
+}
+.selfie-btn i {
+  color: var(--orange2) !important;
+}
+.selfie-btn p {
+  color: var(--blue1) !important;
+}
+.selfie-btn span {
+  color: var(--muted2) !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, var(--blue1), #2b5ea0) !important;
+  box-shadow: 0 10px 22px rgba(28, 67, 115, 0.22);
+}
+.btn-success {
+  background: linear-gradient(
+    135deg,
+    var(--orange2),
+    var(--orange1)
+  ) !important;
+  box-shadow: 0 10px 22px rgba(216, 70, 44, 0.22);
+}
+.btn-danger {
+  background: linear-gradient(135deg, var(--navy), var(--blue1)) !important;
+  box-shadow: 0 10px 22px rgba(15, 30, 60, 0.22);
+}
+.btn-outline {
+  color: var(--blue1) !important;
+  border-color: rgba(28, 67, 115, 0.22) !important;
+}
+
+/* Tabs (kalau kepake di page lain layout.css) */
+.tabs {
+  box-shadow: 0 10px 22px rgba(15, 30, 60, 0.08);
+}
+.tab.active {
+  background: linear-gradient(135deg, var(--blue1), #2b5ea0) !important;
+  box-shadow: 0 10px 22px rgba(28, 67, 115, 0.22);
+}
+
+/* Bottom nav */
+.bottom-nav {
+  border-top-color: rgba(15, 30, 60, 0.1) !important;
+  box-shadow: 0 -10px 26px rgba(15, 30, 60, 0.06);
+}
+.nav-icon-w,
+.nav-text {
+  color: var(--muted2) !important;
+}
+.nav-item.active .nav-icon-w,
+.nav-item.active .nav-text {
+  color: var(--blue1) !important;
+}
+
+.nav-center-btn {
+  background: linear-gradient(
+    135deg,
+    var(--orange1),
+    var(--orange2)
+  ) !important;
+  box-shadow: 0 14px 26px rgba(216, 70, 44, 0.25);
 }

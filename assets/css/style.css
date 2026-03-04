@@ -6,11 +6,22 @@
 
 :root {
   --bg: #f8faff;
-  --primary: #4e66ff;
-  --text: #1a1450;
-  --muted: #8c93b0;
-  --muted2: #bcc2da;
-  --border: #eceef8;
+
+  --orange1: #d8462c;
+  --orange2: #ec8845;
+  --blue1: #1c4373;
+  --navy: #0f1e3c;
+
+  --primary: var(--blue1);
+  --text: var(--navy);
+  --muted: rgba(15, 30, 60, 0.6);
+  --muted2: rgba(15, 30, 60, 0.4);
+  --border: rgba(15, 30, 60, 0.1);
+
+  /* tint untuk kartu/ikon bg */
+  --card: #ffffff;
+  --soft: rgba(28, 67, 115, 0.06);
+  --soft2: rgba(236, 136, 69, 0.1);
 }
 
 body {
@@ -601,4 +612,272 @@ body {
 .menu-arrow {
   font-size: 11px;
   color: #c8cede;
+}
+
+/* =========================
+   THEME OVERRIDE (PALET BARU)
+   ========================= */
+
+/* Body & wrapper */
+body {
+  background: var(--bg);
+}
+.mobile {
+  background: var(--bg);
+}
+
+/* Header gradient (fresh, lebih cerah) */
+.header {
+  background: linear-gradient(
+    160deg,
+    rgba(28, 67, 115, 1) 0%,
+    rgba(236, 136, 69, 1) 55%,
+    rgba(216, 70, 44, 1) 100%
+  ) !important;
+}
+
+/* Floating stats shadow sedikit lebih “clean” */
+.stat-card {
+  box-shadow: 0 10px 26px rgba(15, 30, 60, 0.1);
+}
+
+/* Badge division (lebih nyatu) */
+.division-badge {
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+/* Tombol kecil kanan (bell) */
+.h-btn {
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+/* Nav active */
+.nav-item.active .nav-icon-w,
+.nav-item.active .nav-text {
+  color: var(--blue1) !important;
+}
+
+/* Center button gradient */
+.nav-center-btn {
+  background: linear-gradient(
+    135deg,
+    var(--orange1),
+    var(--orange2)
+  ) !important;
+}
+
+/* Attendance cards: pakai tema palet */
+.attend-in {
+  background: linear-gradient(135deg, var(--blue1), #2b5ea0) !important;
+}
+.attend-out {
+  background: linear-gradient(
+    135deg,
+    var(--orange1),
+    var(--orange2)
+  ) !important;
+}
+
+/* Link “View more / Detail” */
+.sec-title a {
+  color: var(--blue1) !important;
+}
+
+/* =========================
+   FAVORITE & APP GRID (seragam + “belang” halus)
+   ========================= */
+
+/* 1) item wrapper: kasih striping halus biar rapi */
+.fav-item,
+.app-item {
+  border-radius: 18px;
+  padding: 2px;
+}
+
+/* Alternating background halus (belang) */
+.fav-item:nth-child(odd) .fav-ico,
+.app-item:nth-child(odd) .app-ico {
+  background: linear-gradient(
+    135deg,
+    rgba(28, 67, 115, 0.08),
+    rgba(236, 136, 69, 0.1)
+  ) !important;
+}
+.fav-item:nth-child(even) .fav-ico,
+.app-item:nth-child(even) .app-ico {
+  background: linear-gradient(
+    135deg,
+    rgba(15, 30, 60, 0.06),
+    rgba(216, 70, 44, 0.1)
+  ) !important;
+}
+
+/* 2) icon container: hapus kesan warna-warni lama (override inline) */
+.fav-ico,
+.app-ico {
+  box-shadow: 0 8px 18px rgba(15, 30, 60, 0.12) !important;
+  border: 1px solid rgba(15, 30, 60, 0.08);
+}
+
+/* 3) warna icon mengikuti palet */
+.fav-ico i,
+.app-ico i {
+  color: var(--blue1) !important;
+}
+
+/* 4) “rotasi” warna icon biar variasi tapi tetap palet */
+.fav-item:nth-child(4n + 1) .fav-ico i,
+.app-item:nth-child(4n + 1) .app-ico i {
+  color: var(--orange1) !important;
+}
+
+.fav-item:nth-child(4n + 2) .fav-ico i,
+.app-item:nth-child(4n + 2) .app-ico i {
+  color: var(--orange2) !important;
+}
+
+.fav-item:nth-child(4n + 3) .fav-ico i,
+.app-item:nth-child(4n + 3) .app-ico i {
+  color: var(--blue1) !important;
+}
+
+.fav-item:nth-child(4n + 4) .fav-ico i,
+.app-item:nth-child(4n + 4) .app-ico i {
+  color: var(--navy) !important;
+}
+
+/* Label teks */
+.fav-lbl,
+.app-lbl {
+  color: rgba(15, 30, 60, 0.7) !important;
+  font-weight: 800;
+}
+
+/* Hover tetap fresh */
+.fav-ico:hover,
+.app-ico:hover {
+  transform: scale(1.06) translateY(-1px) !important;
+}
+
+/* =========================
+   News thumb biar nyatu theme
+   ========================= */
+.news-thumb-1 {
+  background: linear-gradient(
+    135deg,
+    var(--orange1),
+    var(--orange2)
+  ) !important;
+}
+.news-thumb-2 {
+  background: linear-gradient(135deg, var(--blue1), #2b5ea0) !important;
+}
+.news-tag {
+  border: 1px solid rgba(15, 30, 60, 0.1);
+}
+
+/* =========================
+   MORE APPS (PAGE 2) THEME
+   ========================= */
+
+/* Header page 2 */
+.page2-header {
+  background: linear-gradient(
+    135deg,
+    rgba(28, 67, 115, 1) 0%,
+    rgba(236, 136, 69, 1) 60%,
+    rgba(216, 70, 44, 1) 100%
+  ) !important;
+}
+
+/* back button tetap glass */
+.back-btn {
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+/* Search bar */
+.search-bar {
+  box-shadow: 0 8px 22px rgba(15, 30, 60, 0.1);
+  border: 1px solid rgba(15, 30, 60, 0.06);
+}
+.search-bar i,
+.search-bar span {
+  color: rgba(15, 30, 60, 0.45) !important;
+}
+
+/* Category label: bullet warna ikutin tema, override inline style */
+.cat-label i {
+  color: var(--orange2) !important;
+}
+
+/* Menu item card */
+.menu-item {
+  box-shadow: 0 8px 22px rgba(15, 30, 60, 0.08);
+  border: 1px solid rgba(15, 30, 60, 0.06);
+}
+
+/* “Belang” halus antar item */
+.menu-list .menu-item:nth-child(odd) {
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    rgba(28, 67, 115, 0.03)
+  ) !important;
+}
+.menu-list .menu-item:nth-child(even) {
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    rgba(236, 136, 69, 0.05)
+  ) !important;
+}
+
+/* Icon box: background seragam (bukan warna-warni), override inline gradient */
+.menu-item-ico {
+  background: linear-gradient(
+    135deg,
+    rgba(28, 67, 115, 0.1),
+    rgba(236, 136, 69, 0.12)
+  ) !important;
+  border: 1px solid rgba(15, 30, 60, 0.08);
+  box-shadow: 0 8px 18px rgba(15, 30, 60, 0.12) !important;
+}
+
+/* Warna icon ikut palet, bukan putih */
+.menu-item-ico i {
+  color: var(--blue1) !important;
+}
+
+/* Rotasi warna icon biar variatif tapi tetap palet */
+.menu-list .menu-item:nth-child(4n + 1) .menu-item-ico i {
+  color: var(--orange1) !important;
+}
+.menu-list .menu-item:nth-child(4n + 2) .menu-item-ico i {
+  color: var(--orange2) !important;
+}
+.menu-list .menu-item:nth-child(4n + 3) .menu-item-ico i {
+  color: var(--blue1) !important;
+}
+.menu-list .menu-item:nth-child(4n + 4) .menu-item-ico i {
+  color: var(--navy) !important;
+}
+
+/* Text */
+.menu-item-name {
+  color: var(--text) !important;
+}
+.menu-item-desc {
+  color: rgba(15, 30, 60, 0.55) !important;
+}
+.menu-arrow {
+  color: rgba(15, 30, 60, 0.25) !important;
+}
+
+/* Hover */
+.menu-item:hover {
+  transform: translateX(2px);
+  border-color: rgba(28, 67, 115, 0.16);
 }
